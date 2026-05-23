@@ -6,7 +6,7 @@ const paymentLinks = {
   studio: import.meta.env.VITE_SCRIBER_STUDIO_PAYMENT_LINK || 'https://buy.stripe.com/6oU00jbt5crL95VgTq9sk05',
 };
 
-const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://github.com/AetharaAI/Scriber/releases/latest';
+const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://scriber.aetherpro.us/downloads/Scriber_0.1.4_amd64.deb';
 const contactEmail = import.meta.env.VITE_SCRIBER_CONTACT_EMAIL || 'cory@aetherpro.us';
 
 const app = document.querySelector<HTMLDivElement>('#app');
@@ -92,8 +92,8 @@ app.innerHTML = `
             <p>Built for IDEs, docs, terminals, browser tabs, ops notes, and founder brain-dump sessions.</p>
           </article>
           <article class="feature-card">
-            <h3>AetherPro ASR backbone</h3>
-            <p>Current release uses AetherPro-backed transcription infrastructure with private options on the roadmap.</p>
+            <h3>Private deployment roadmap</h3>
+            <p>Launch with the hosted workflow now, with more private deployment options planned later.</p>
           </article>
         </div>
       </section>
@@ -182,11 +182,11 @@ app.innerHTML = `
           <article class="download-card">
             <h3>Install flow</h3>
             <ol>
-              <li>Download the latest .deb release.</li>
+              <li>Download the current .deb installer.</li>
               <li>Install it with your package manager or double-click installer.</li>
               <li>Open Scriber and start talking.</li>
             </ol>
-            <pre><code>sudo apt install ./Scriber_0.1.3_amd64.deb</code></pre>
+            <pre><code>sudo apt install ./Scriber_0.1.4_amd64.deb</code></pre>
           </article>
           <article class="download-card">
             <h3>Roadmap packages</h3>
@@ -211,7 +211,7 @@ app.innerHTML = `
           </article>
           <article>
             <h3>Is this fully local?</h3>
-            <p>Not in the current release. The current product can use AetherPro ASR infrastructure. Private and local-first options may come later.</p>
+            <p>Not in the current release. More private deployment options may come later.</p>
           </article>
           <article>
             <h3>Can I use it for coding?</h3>

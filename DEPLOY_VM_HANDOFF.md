@@ -15,7 +15,7 @@ Deployment target:
 - No Stripe webhook handling.
 - No Google Analytics or ad pixels.
 - Pricing buttons use direct Stripe payment links.
-- Download button points to the latest GitHub release page for the desktop app.
+- Download button is intended to point to a direct `.deb` file served from this site domain.
 
 ## Build
 
@@ -47,6 +47,18 @@ Copy build output:
 ```bash
 sudo mkdir -p /var/www/scriber-site
 sudo rsync -av --delete dist/ /var/www/scriber-site/
+```
+
+Suggested public download directory:
+
+```text
+/var/www/scriber-site/downloads
+```
+
+Expected launch artifact URL:
+
+```text
+https://scriber.aetherpro.us/downloads/Scriber_0.1.4_amd64.deb
 ```
 
 ## Suggested nginx Shape
@@ -98,7 +110,7 @@ The current build already has sane defaults, but these may be set with a `.env` 
 VITE_SCRIBER_FOUNDER_PAYMENT_LINK=https://buy.stripe.com/6oU4gz2Wz2Rb5TJ0Us9sk04
 VITE_SCRIBER_PRO_PAYMENT_LINK=https://buy.stripe.com/9B614n54HezT6XNav29sk06
 VITE_SCRIBER_STUDIO_PAYMENT_LINK=https://buy.stripe.com/6oU00jbt5crL95VgTq9sk05
-VITE_SCRIBER_DOWNLOAD_LINK=https://github.com/AetharaAI/Scriber/releases/latest
+VITE_SCRIBER_DOWNLOAD_LINK=https://scriber.aetherpro.us/downloads/Scriber_0.1.4_amd64.deb
 VITE_SCRIBER_CONTACT_EMAIL=cory@aetherpro.us
 ```
 
@@ -114,3 +126,4 @@ VITE_SCRIBER_CONTACT_EMAIL=cory@aetherpro.us
 - No backend service or port binding is required.
 - No database or runtime daemon is required.
 - A standard static-site nginx deploy is enough.
+- The `.deb` installer should be copied into the `downloads/` directory under the same static root so the public download button resolves without relying on GitHub.
