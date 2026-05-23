@@ -1,0 +1,10 @@
+{
+  "version": "1.1.6",
+  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.1.6_amd64.deb",
+  "published_at": "2026-05-23T21:30:00Z",
+  "notes": [
+    "Added in-app update checks for Linux builds.",
+    "App can now surface a visible update button when a newer installer is published.",
+    "Hosted billing and free-minute access flow remain in place."
+  ]
+}
