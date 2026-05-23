@@ -41,9 +41,9 @@ app.innerHTML = `
           </p>
           <div class="hero-actions">
             <a class="button primary" href="${paymentLinks.founder}" target="_blank" rel="noreferrer">Get Founder Access - $99</a>
-            <a class="button secondary" href="${downloadLink}" target="_blank" rel="noreferrer">Download Beta</a>
+            <a class="button secondary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>
           </div>
-          <p class="hero-note">Paid launch. Linux beta first. No sign-in required to buy or download.</p>
+          <p class="hero-note">.deb installer available now. AppImage coming soon. No sign-in required to buy or download.</p>
         </div>
 
         <div class="hero-card">
@@ -177,7 +177,7 @@ app.innerHTML = `
           <article class="download-card">
             <h3>Primary release</h3>
             <p><strong>.deb</strong> is the main path for the first public release.</p>
-            <a class="button primary" href="${downloadLink}" target="_blank" rel="noreferrer">Get Linux Download</a>
+            <a class="button primary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>
           </article>
           <article class="download-card">
             <h3>Install flow</h3>
