@@ -6,7 +6,7 @@ const paymentLinks = {
   studio: import.meta.env.VITE_SCRIBER_STUDIO_PAYMENT_LINK || 'https://buy.stripe.com/6oU00jbt5crL95VgTq9sk05',
 };
 
-const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://scriber.aetherpro.us/downloads/Scriber_0.1.4_amd64.deb';
+const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://scriber.aetherpro.us/downloads/Scriber_1.1.5_amd64.deb';
 const contactEmail = import.meta.env.VITE_SCRIBER_CONTACT_EMAIL || 'cory@aetherpro.us';
 
 const app = document.querySelector<HTMLDivElement>('#app');
@@ -40,10 +40,10 @@ app.innerHTML = `
             founders, and creators who live in terminals, browsers, IDEs, docs, and real work.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="${paymentLinks.founder}" target="_blank" rel="noreferrer">Get Founder Access - $99</a>
-            <a class="button secondary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>
+            <a class="button primary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>
+            <a class="button secondary" href="#pricing">See Pricing</a>
           </div>
-          <p class="hero-note">.deb installer available now. AppImage coming soon. No sign-in required to buy or download.</p>
+          <p class="hero-note">Includes 30 free minutes. Upgrade inside the app when you hit the hosted usage cap. .deb available now. AppImage coming soon.</p>
         </div>
 
         <div class="hero-card">
@@ -184,9 +184,9 @@ app.innerHTML = `
             <ol>
               <li>Download the current .deb installer.</li>
               <li>Install it with your package manager or double-click installer.</li>
-              <li>Open Scriber and start talking.</li>
+              <li>Open Scriber, use the included free minutes, and upgrade inside the app if you need more hosted usage.</li>
             </ol>
-            <pre><code>sudo apt install ./Scriber_0.1.4_amd64.deb</code></pre>
+            <pre><code>sudo apt install ./Scriber_1.1.5_amd64.deb</code></pre>
           </article>
           <article class="download-card">
             <h3>Roadmap packages</h3>
@@ -203,7 +203,7 @@ app.innerHTML = `
         <div class="faq-list">
           <article>
             <h3>Is Scriber free?</h3>
-            <p>Scriber is launching as a paid product. Founder, Pro, and Studio lanes are live now through Stripe checkout links.</p>
+            <p>Every install includes free hosted transcription minutes. After that, you can upgrade inside the app or buy one of the public paid lanes.</p>
           </article>
           <article>
             <h3>Does it require Linux?</h3>
@@ -234,7 +234,7 @@ app.innerHTML = `
         <a href="/privacy.html">Privacy</a>
         <a href="/terms.html">Terms</a>
         <a href="mailto:${contactEmail}">Contact</a>
-        <a href="https://github.com/AetharaAI/Scriber/releases/latest" target="_blank" rel="noreferrer">Releases</a>
+        <a href="#download">Download</a>
       </div>
     </footer>
   </div>

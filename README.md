@@ -41,7 +41,7 @@ Primary site target:
 
 Public download target is intended to be served directly from the site VM, for example:
 
-- `https://scriber.aetherpro.us/downloads/Scriber_0.1.4_amd64.deb`
+- `https://scriber.aetherpro.us/downloads/Scriber_1.1.5_amd64.deb`
 
 ## VM Handoff
 
@@ -49,7 +49,7 @@ See [DEPLOY_VM_HANDOFF.md](./DEPLOY_VM_HANDOFF.md) for the VM-oriented deploymen
 
 ## Notes
 
-- No auth in v1
+- Public installer download with in-app upgrade path
 - No Stripe webhook logic in this repo
 - No Google Analytics or ad pixels
 - Linux-first messaging
