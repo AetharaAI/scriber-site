@@ -68,14 +68,26 @@ a.button {
 .brand-block {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
-.brand-mark {
-  color: #fff7db;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: lowercase;
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  width: 34px;
+  height: 34px;
+  flex: none;
+}
+
+.brand-wordmark {
+  display: block;
+  width: auto;
+  height: 26px;
+  object-fit: contain;
 }
 
 .brand-sub {
@@ -418,6 +430,10 @@ pre {
   .topnav {
     gap: 12px;
     font-size: 0.88rem;
+  }
+
+  .brand-wordmark {
+    height: 22px;
   }
 
   h1 {
