@@ -1,10 +1,10 @@
 {
-  "version": "1.1.9",
-  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.1.9_amd64.deb",
-  "published_at": "2026-05-24T18:30:00Z",
+  "version": "1.1.10",
+  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.1.10_amd64.deb",
+  "published_at": "2026-05-24T19:00:00Z",
   "notes": [
-    "Desktop update checks now use the native Tauri HTTP path for more reliable manifest loading.",
-    "Hosted billing state text is clearer when backend entitlement status is still unknown.",
-    "Connection errors now explain when the hosted Scriber bootstrap route is missing on the backend."
+    "Fixed a stale hardcoded desktop version constant that caused a just-installed build to advertise an update to itself.",
+    "Version bump automation now updates the app-side release constants in src/lib/defaults.ts.",
+    "Hosted billing and native desktop update checks from 1.1.9 remain in place."
   ]
 }

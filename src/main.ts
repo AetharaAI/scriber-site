@@ -6,7 +6,7 @@ const paymentLinks = {
   studio: import.meta.env.VITE_SCRIBER_STUDIO_PAYMENT_LINK || 'https://buy.stripe.com/6oU00jbt5crL95VgTq9sk05',
 };
 
-const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://scriber.aetherpro.us/downloads/Scriber_1.1.9_amd64.deb';
+const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://scriber.aetherpro.us/downloads/Scriber_1.1.10_amd64.deb';
 const contactEmail = import.meta.env.VITE_SCRIBER_CONTACT_EMAIL || 'cory@aetherpro.us';
 
 const app = document.querySelector<HTMLDivElement>('#app');
@@ -189,7 +189,7 @@ app.innerHTML = `
               <li>Install it with your package manager or double-click installer.</li>
               <li>Open Scriber, use the included free minutes, and upgrade inside the app if you need more hosted usage.</li>
             </ol>
-            <pre><code>sudo apt install ./Scriber_1.1.9_amd64.deb</code></pre>
+            <pre><code>sudo apt install ./Scriber_1.1.10_amd64.deb</code></pre>
           </article>
           <article class="download-card">
             <h3>Roadmap packages</h3>
