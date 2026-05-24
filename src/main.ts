@@ -37,10 +37,10 @@ app.innerHTML = `
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Linux-first desktop product</p>
-          <h1>Linux-first realtime transcription.</h1>
+          <h1>Speak once.<br />Keep the text.</h1>
           <p class="hero-text">
-            Talk once. Get clean text anywhere. Built for Ubuntu and Linux operators, developers,
-            founders, and creators who live in terminals, browsers, IDEs, docs, and real work.
+            A Linux-first realtime transcription app for operators, developers, founders, and creators
+            working across terminals, browsers, IDEs, docs, and operator consoles.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>

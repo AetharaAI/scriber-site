@@ -128,12 +128,13 @@ p {
 }
 
 h1 {
-  max-width: 11ch;
-  margin-bottom: 18px;
+  max-width: 8.6ch;
+  margin-bottom: 20px;
   color: #fff7db;
-  font-size: clamp(3rem, 8vw, 6rem);
-  line-height: 0.96;
-  letter-spacing: -0.05em;
+  font-size: clamp(3rem, 6.4vw, 5.35rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
 }
 
 h2 {
@@ -154,6 +155,12 @@ h2 {
 .footer p {
   color: #c8d7e6;
   line-height: 1.6;
+}
+
+.hero-text {
+  max-width: 40rem;
+  font-size: 1.04rem;
+  line-height: 1.72;
 }
 
 .hero-actions,
@@ -413,6 +420,12 @@ pre {
 
   .feature-grid {
     grid-template-columns: 1fr;
+  }
+
+  h1 {
+    max-width: 9.4ch;
+    font-size: clamp(3rem, 8.8vw, 4.9rem);
+    line-height: 0.98;
   }
 }
 
