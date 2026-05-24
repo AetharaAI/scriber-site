@@ -37,7 +37,7 @@ app.innerHTML = `
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">Linux-first desktop product</p>
-          <h1>Speak once.<br />Keep the text.</h1>
+          <h1 class="hero-title">Speak once.<br />Keep the text.</h1>
           <p class="hero-text">
             A Linux-first realtime transcription app for operators, developers, founders, and creators
             working across terminals, browsers, IDEs, docs, and operator consoles.
@@ -71,7 +71,7 @@ app.innerHTML = `
       <section class="section-grid" id="why">
         <div>
           <p class="eyebrow">Why Scriber</p>
-          <h2>Most dictation tools treat Linux like an afterthought. Scriber starts there.</h2>
+          <h2 class="section-title section-title-wide">Most dictation tools treat Linux like an afterthought. Scriber starts there.</h2>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
@@ -104,7 +104,7 @@ app.innerHTML = `
       <section class="use-cases">
         <div class="section-header">
           <p class="eyebrow">Use cases</p>
-          <h2>Built for people who do actual work at a keyboard all day.</h2>
+          <h2 class="section-title">Built for people who do actual work at a keyboard all day.</h2>
         </div>
         <div class="case-grid">
           <article>
@@ -129,7 +129,7 @@ app.innerHTML = `
       <section class="pricing" id="pricing">
         <div class="section-header">
           <p class="eyebrow">Pricing</p>
-          <h2>Pick the lane. Buy with Stripe. Download and go.</h2>
+          <h2 class="section-title">Pick the lane. Buy with Stripe. Download and go.</h2>
         </div>
         <div class="pricing-grid">
           <article class="price-card featured">
@@ -174,7 +174,7 @@ app.innerHTML = `
       <section class="download-section" id="download">
         <div class="section-header">
           <p class="eyebrow">Download</p>
-          <h2>Install like a Linux app, not a side quest.</h2>
+          <h2 class="section-title">Install like a Linux app, not a side quest.</h2>
         </div>
         <div class="download-grid">
           <article class="download-card">
@@ -201,7 +201,7 @@ app.innerHTML = `
       <section class="faq-section" id="faq">
         <div class="section-header">
           <p class="eyebrow">FAQ</p>
-          <h2>What people will ask first.</h2>
+          <h2 class="section-title section-title-compact">What people will ask first.</h2>
         </div>
         <div class="faq-list">
           <article>
