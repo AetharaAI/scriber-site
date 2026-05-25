@@ -1,10 +1,10 @@
 {
-  "version": "1.1.10",
-  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.1.10_amd64.deb",
-  "published_at": "2026-05-24T19:00:00Z",
+  "version": "1.1.15",
+  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.1.15_amd64.deb",
+  "published_at": "2026-05-25T14:45:00Z",
   "notes": [
-    "Fixed a stale hardcoded desktop version constant that caused a just-installed build to advertise an update to itself.",
-    "Version bump automation now updates the app-side release constants in src/lib/defaults.ts.",
-    "Hosted billing and native desktop update checks from 1.1.9 remain in place."
+    "Fixed hosted Scriber auth headers so install JWT session tokens no longer get sent as X-API-Key.",
+    "Kept operator API-key flows intact while routing hosted sessions through the backend bearer-token lane.",
+    "Scriber connect/debug priority remains restoring boring open-connect-talk reliability."
   ]
 }
