@@ -41,7 +41,7 @@ Primary site target:
 
 Public download target is intended to be served directly from the site VM, for example:
 
-- `https://scriber.aetherpro.us/downloads/Scriber_1.1.15_amd64.deb`
+- `https://scriber.aetherpro.us/downloads/Scriber_1.2.0_amd64.deb`
 
 ## VM Handoff
 

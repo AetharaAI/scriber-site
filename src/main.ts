@@ -1,12 +1,16 @@
 import './styles.css';
 
+const releaseVersion = '1.2.0';
+const releaseArtifact = `Scriber_${releaseVersion}_amd64.deb`;
+const releaseDownloadUrl = `https://scriber.aetherpro.us/downloads/${releaseArtifact}`;
+
 const paymentLinks = {
   founder: import.meta.env.VITE_SCRIBER_FOUNDER_PAYMENT_LINK || 'https://buy.stripe.com/6oU4gz2Wz2Rb5TJ0Us9sk04',
   pro: import.meta.env.VITE_SCRIBER_PRO_PAYMENT_LINK || 'https://buy.stripe.com/9B614n54HezT6XNav29sk06',
   studio: import.meta.env.VITE_SCRIBER_STUDIO_PAYMENT_LINK || 'https://buy.stripe.com/6oU00jbt5crL95VgTq9sk05',
 };
 
-const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || 'https://scriber.aetherpro.us/downloads/Scriber_1.1.15_amd64.deb';
+const downloadLink = import.meta.env.VITE_SCRIBER_DOWNLOAD_LINK || releaseDownloadUrl;
 const contactEmail = import.meta.env.VITE_SCRIBER_CONTACT_EMAIL || 'cory@aetherpro.us';
 
 const app = document.querySelector<HTMLDivElement>('#app');
@@ -46,7 +50,7 @@ app.innerHTML = `
             <a class="button primary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>
             <a class="button secondary" href="#pricing">See Pricing</a>
           </div>
-          <p class="hero-note">Includes 30 free minutes. Upgrade inside the app when you hit the hosted usage cap. .deb available now. AppImage coming soon.</p>
+          <p class="hero-note">Current release: ${releaseVersion}. Desktop transcription is working again. Includes 30 free minutes, with the .deb available now and AppImage coming soon.</p>
         </div>
 
         <div class="hero-card">
@@ -174,11 +178,11 @@ app.innerHTML = `
       <section class="download-section" id="download">
         <div class="section-header">
           <p class="eyebrow">Download</p>
-          <h2 class="section-title">Install like a Linux app, not a side quest.</h2>
+          <h2 class="section-title">Install Scriber ${releaseVersion} like a Linux app, not a side quest.</h2>
         </div>
         <div class="download-grid">
           <article class="download-card">
-            <h3>Primary release</h3>
+            <h3>Primary release ${releaseVersion}</h3>
             <p><strong>.deb</strong> is the main path for the first public release.</p>
             <a class="button primary" href="${downloadLink}" target="_blank" rel="noreferrer">Download for Linux</a>
           </article>
@@ -189,7 +193,7 @@ app.innerHTML = `
               <li>Install it with your package manager or double-click installer.</li>
               <li>Open Scriber, use the included free minutes, and upgrade inside the app if you need more hosted usage.</li>
             </ol>
-            <pre><code>sudo apt install ./Scriber_1.1.15_amd64.deb</code></pre>
+            <pre><code>sudo apt install ./Scriber_1.2.0_amd64.deb</code></pre>
           </article>
           <article class="download-card">
             <h3>Roadmap packages</h3>

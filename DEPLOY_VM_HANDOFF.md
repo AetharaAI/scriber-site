@@ -58,7 +58,7 @@ Suggested public download directory:
 Expected launch artifact URL:
 
 ```text
-https://scriber.aetherpro.us/downloads/Scriber_1.1.15_amd64.deb
+https://scriber.aetherpro.us/downloads/Scriber_1.2.0_amd64.deb
 ```
 
 ## Suggested nginx Shape
@@ -110,7 +110,7 @@ The current build already has sane defaults, but these may be set with a `.env` 
 VITE_SCRIBER_FOUNDER_PAYMENT_LINK=https://buy.stripe.com/6oU4gz2Wz2Rb5TJ0Us9sk04
 VITE_SCRIBER_PRO_PAYMENT_LINK=https://buy.stripe.com/9B614n54HezT6XNav29sk06
 VITE_SCRIBER_STUDIO_PAYMENT_LINK=https://buy.stripe.com/6oU00jbt5crL95VgTq9sk05
-VITE_SCRIBER_DOWNLOAD_LINK=https://scriber.aetherpro.us/downloads/Scriber_1.1.15_amd64.deb
+VITE_SCRIBER_DOWNLOAD_LINK=https://scriber.aetherpro.us/downloads/Scriber_1.2.0_amd64.deb
 VITE_SCRIBER_CONTACT_EMAIL=cory@aetherpro.us
 ```
 

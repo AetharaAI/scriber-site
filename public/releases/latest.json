@@ -1,10 +1,10 @@
 {
-  "version": "1.1.15",
-  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.1.15_amd64.deb",
-  "published_at": "2026-05-25T14:45:00Z",
+  "version": "1.2.0",
+  "download_url": "https://scriber.aetherpro.us/downloads/Scriber_1.2.0_amd64.deb",
+  "published_at": "2026-05-26T00:00:00Z",
   "notes": [
-    "Fixed hosted Scriber auth headers so install JWT session tokens no longer get sent as X-API-Key.",
-    "Kept operator API-key flows intact while routing hosted sessions through the backend bearer-token lane.",
-    "Scriber connect/debug priority remains restoring boring open-connect-talk reliability."
+    "Restored desktop transcription for the 1.2.0 release and updated the landing page to point at the new .deb.",
+    "Kept hosted Scriber sessions on the backend bearer-token lane while preserving operator API-key flows.",
+    "Scriber 1.2.0 is now the current release on the site and release manifest."
   ]
 }
